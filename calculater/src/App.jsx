@@ -11,9 +11,9 @@ function App() {
     <>
      <div className='calculater'>
       <div className='printer'>
-      <input type="text" value={value} />
+      <input type="text" value={value}/>
       </div>
-      <div className='keypad'>
+      <div className='keypad' >
         <div className='col1'>
         <input type="button" value="AC" onClick={e => setValue("")}/>
         <input type="button" value="/" onClick={e => setValue(value + e.target.value)}/>
@@ -41,7 +41,7 @@ function App() {
           <div className='col5'>
           <input type="button" value="%" onClick={e => setValue(value + e.target.value)}/>
         <input type="button" value="0" onClick={e => setValue(value + e.target.value)}/>
-        <input type="button" value="." onClick={e => setValue(value + e.target.value)}/>
+        <input type="button" value="." onClick={e => setValue(value + e.target.value)} />
         
           </div>
       </div>
